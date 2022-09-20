@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-head {
+    @apply grid grid-cols-3 m-2 border-b-2 border-gray-200;
+}
+   
+.table-row {
+    @apply grid grid-cols-3 rounded-md p-2 pl-4 m-2 bg-green-200 hover:bg-green-300 hover:shadow-md;
+}
+
+.menu-item {
+    @apply text-gray-700 p-2 mx-2 my-2 rounded-md bg-green-300 shadow-lg hover:bg-green-400 hover:border-r-8 hover:border-r-white flex font-bold;
+}
